@@ -1,0 +1,6 @@
+<h1>List of JSON Files</h1>
+
+<% @data.each_with_index do |file_data, index| %>
+  <h2>File <%= index + 1 %></h2>
+  <pre><%= JSON.pretty_generate(file_data) %></pre>
+<% end %>
